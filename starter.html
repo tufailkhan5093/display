@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Starter</title>
+</head>
+<body>
+<h1>Learn Json</h1>
+
+
+<div id="output"></div>
+<script type="text/javascript">
+
+ var obj={
+     "freinds":[
+         {
+             "first":"furqan",
+             "last":"Khan",
+         },
+         {
+             "first":"anwar",
+             "last":"Khan",
+         },
+
+         {
+             "first":"tufail",
+             "last":"Khan",
+         },
+         {
+             "first":"kitto",
+             "last":"Khan",
+         }
+
+     ]
+ }
+
+ var users=obj.freinds;
+ var html='';
+ for(var x in users)
+ {
+     html+=((Number(x)+1)+'.'+users[x].first+' '+users[x].last+'<br>');
+ }
+
+ document.getElementById('output')
+ .innerHTML=html;
+
+</script>
+</body>
+</html>
